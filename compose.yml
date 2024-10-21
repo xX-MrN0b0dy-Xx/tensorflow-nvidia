@@ -1,0 +1,14 @@
+version: '3'
+services:
+# Security: access.log via nginx but no fail2ban, running on Windows WSL Docker Desktop
+  tensorflow-nvidia:
+    #image: tensorflow/tensorflow:latest-gpu-jupyter #latest release w/ GPU support and Jupyter
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: my-tensorflow-nvidia-jupyter:2.15.0
+    container_name: tensorflow-nvidia
+    ports:
+      - "8888:8888"
+    runtime: nvidia
+# Remember first time to run with --build flag to build the image
