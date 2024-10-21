@@ -16,4 +16,4 @@ RUN apt update && apt install graphviz -y
 EXPOSE 8888
 
 # Run Jupyter notebook
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--no-browser", "--ServerApp.token='suPlkn2KmlaYoF3HI2Q9OwuqHVIQOOeV8u746pvvJPA8hP7Hm58BYqluds68CyRS'"]
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--no-browser", "--ServerApp.token='Aa09-'"]
