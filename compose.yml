@@ -1,5 +1,5 @@
 services:
-  tensorflow-nvidia:
+  server:
     build:
       context: .
       dockerfile: Dockerfile
